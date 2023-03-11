@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculator </title>
+</head>
+<body>
+	<p>*Open console to view answer.</p>
+
+	<script type="text/javascript">
+		let action = prompt("[1] = Addition, [2] = Subtraction, [3] = Multiplication, [4] = Division. Enter a number to perform an action.");
+
+		let a = prompt("Input your first number");
+		let b = prompt("Input your second number");
+		let answer = 0;
+
+		switch(action) {
+		  case '1':
+		    answer = Number(a) + Number(b); 
+		    console.log( a + " + " + b + " = " + answer);
+		    break;
+		  case '2':
+		    answer = a - b;
+		    answer = Number(answer);
+		    console.log( a + " - " + b + " = " + answer);
+		    break;
+		  case '3':
+		    answer = a * b;
+		    answer = Number(answer);
+		    console.log( a + " x " + b + " = " + answer);
+		    break;
+		  case '4':
+		    answer = a / b;
+		    answer = Number(answer);
+		    console.log( a + " ÷ " + b + " = " + answer);
+		    break;  
+		  default:
+		    console.log("Invalid Input");
+		}
+		console.log("Refresh page to perform another action.");
+	</script>
+</html>
